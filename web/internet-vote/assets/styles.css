@@ -1,7 +1,8 @@
 /* Fonts
 ---------------------------------------------------------------------- */
 
-@font-face {
+
+/* @font-face {
     font-weight: 400;
     font-style: normal;
     font-family: "Circular-AddEvent";
@@ -56,6 +57,7 @@
     font-family: "Circular-AddEvent";
     src: url("../fonts/CircularXXWeb-BoldItalic.woff2") format("woff2");
 }
+ */
 
 
 /* Google Material fonts */
@@ -1791,7 +1793,7 @@ select:-webkit-autofill {
     top: 12px;
     right: 13px;
     z-index: 0;
-    background: transparent url(../gfx/icon-arrow-down-t1.svg) no-repeat 50% 50%;
+    /* background: transparent url(../gfx/icon-arrow-down-t1.svg) no-repeat 50% 50%; */
     background-size: 28px auto;
 }
 

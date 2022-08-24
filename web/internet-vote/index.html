@@ -4,11 +4,10 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Internet Voting</title>
-    <link type="text/css" href="./assets/meeting.landingpage.v2022042016480000.css" rel="stylesheet" media="all">
+    <title>Balltot Voting</title>
+    <link type="text/css" href="./assets/styles.css" rel="stylesheet" media="all">
     <script type="text/javascript" src="./assets/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="./assets/booking.v20220705204400.js"></script>
-    <script type="text/javascript" src="./assets/intlTelInput-jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts.js"></script>
 </head>
 
 <body class="bcls_new" style="">
@@ -18,19 +17,6 @@
         <div class="owin">
             <!-- apptlist / new / details / reschedule / canceled -->
             <div class="con">
-                <!-- ----------------------------------------------- Appointment types list ----------------------------------------------- -->
-                <!-- List -->
-                <div class="appt-types-t1 hide" id="booking-appts-types">
-                    <div class="po">
-                        <div class="sl-t1">
-                            <p>Select an appointment type</p>
-                        </div>
-                        <!-- List - don't change the class -->
-                        <div class="co-t1">
-                            <div>{{appts-list}}</div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Booking container (contains forms) -->
                 <div id="booking-content" class="hide" style="display: block;">
                     <!-- ----------------------------------------------- About section ----------------------------------------------- -->
@@ -42,16 +28,6 @@
                                 <!-- ----------------------------------------------- Page: Select date/time Steps: - User selects date/time (you are here) - User enters information - Appointment confirmation ----------------------------------------------- -->
                                 <!-- Available time slots -->
                                 <div class="tim hide" id="booking-pick" style="display: block;">
-                                    <!-- Showed in case user is about to reschedule the appointment -->
-                                    <div class="resc hide" id="booking-reschedule-header">
-                                        <p class="hed-t1">Reschedule Appointment</p>
-                                        <p class="des-t1"> Current appointment: <br><strong></strong> </p>
-                                        <a href="https://appointmentthing.com/ppl/internet-voting/?date=2022-10#" title="" class="back cancelreschedule"> <i class="material-icons">arrow_back</i> </a>
-                                        <div class="bts">
-                                            <div class="flt"> <a href="https://appointmentthing.com/ppl/internet-voting/?date=2022-10#" title="" class="button-t2 cancelreschedule"> Cancel<i class="material-icons">close</i> </a> </div>
-                                        </div>
-                                        <div class="bdr"></div>
-                                    </div>
                                     <div class="hed">
                                         <p> Select a Date &amp; Time </p>
                                     </div>
@@ -283,7 +259,7 @@
                                         </div>
                                         <!-- Available time slots -->
                                         <div class="slots" id="slots-main">
-                                            <div id="slots" class="hide" style="display: block;">
+                                            <div id="slots" class="" style="display: block;">
                                                 <div class="close mobile-only">
                                                     <div class="ico"><i class="material-icons">close</i></div>
                                                 </div>
@@ -495,208 +471,12 @@
                                 </div>
                                 <!-- ----------------------------------------------- Page: Enter information (new appointment) Steps: - User selects date/time - User enters information (you are here) - Appointment confirmation ----------------------------------------------- -->
                                 <div class="book hide" id="booking-bookform" style="display: none;">
-                                    <h1>Thank you for Schedling Your Vote</h1>
+                                    <h1>Thank you for Scheduling Your Vote</h1>
 
                                     <div class="tim">
                                         <div class="resc">
-                                            <a href="https://appointmentthing.com/ppl/internet-voting/?date=2022-10#" title="" class="back backtoreschedule">Back to calendar</a>
+                                            <a href="#" title="" class="back backtoreschedule">Back to calendar</a>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ----------------------------------------------- Page: Confirmation When a user signs up for an appointment Steps: - User selects date/time - User enters information - Appointment confirmation (you are here) ----------------------------------------------- -->
-                        <!--<div class="confrm hide" id="confirmation-new">
-                            <div class="hed">
-                                <p class="hed-t1"> Confirmed <span class="inco"> <span class="spx"> <svg viewBox="0 0 20 20" fill="currentColor">
-                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" data-v-093f0fe2=""></path>
-                                                    </svg></span> </span>
-                                </p>
-                                <p class="des-t1"> Your appointment has been scheduled. </p>
-                            </div>
-                            <div class="tabopts">
-                                <div class="row">
-                                    <div class="td1"> What </div>
-                                    <div class="td2"> Internet Voting </div>
-                                </div>
-                                <div class="row">
-                                    <div class="td1"> When </div>
-                                    <div class="td2"> <span class="conf-t1-time">{{autoupdates}}</span> </div>
-                                </div>
-                                <div class="row">
-                                    <div class="td1"> Where </div>
-                                    <div class="td2"> <span class="conf-t1-location">{{autoupdates}}</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="td3"> &nbsp; </div>
-                                    <div class="td4"> A confirmation email from AppointmentThing has been sent
-                                        <br>to your email address! You may receive an email from the <br>host's calendar platform inviting you to a calendar event <br>for the appointment. If you need to make any changes to your <br>appointment, options
-                                        are available in the confirmation email. </div>
-                                </div>
-                            </div>
-                            <div class="signbox">
-                                <div class="hdx">
-                                    <p> <strong>That was easy!</strong> Want your own free booking page? </p>
-                                </div>
-                                <div class="bdx">
-                                    <div class="email-enter">
-                                        <form action="https://appointmentthing.com/signup" method="post" class="frtsignup" autocomplete="off" target="_blank"> <input type="text" name="email" value="" placeholder="Enter your email.." autocomplete="off" class="email-enter-input"> <input type="hidden" name="reference" value="bookingpage"> <input type="hidden" name="reference_id"
-                                                value="17997">
-                                            <div class="email-icon"> <i class="material-icons">alternate_email</i> </div>
-                                            <div class="email-submit"> <input type="submit" value="Try it now">
-                                            </div> <input type="hidden" name="csrf" value="428a307fec79de41a10bcbf221f81ea9"><input type="hidden" name="session_userid" value="1660253110EW2toLeOiV7cuRyPdS1b">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
-                        <!-- ----------------------------------------------- Page: Event details From confirmation emails users can navigate to the event details page - to view event details or to reschedule/cancel appointment. - User view event details with option to reschedule (you are here) - User selects a new date/time - User enters reason for rescheduling - Appointment confirmation ----------------------------------------------- -->
-                        <div class="confrm hide" id="appointment-view" data-otl-cancel="" data-otl-reschedule="">
-                            <div class="hed">
-                                <p class="hed-t1"> Appointment </p>
-                            </div>
-                            <!-- Displayed if the user cancels the appointment -->
-                            <div class="cnclbox-t1" id="appointment-view-canceled">
-                                <div class="bx">
-                                    <p> <strong>Canceled</strong> <br>Your appointment has been canceled.
-                                        <br><br><em>By:</em> <br> <br><br><em>Reason:</em> <br> </p> <i class="ico material-icons">info</i>
-                                </div>
-                            </div>
-                            <div class="confirmation-t1" id="appointment-view-details">
-                                <div class="tabopts">
-                                    <div class="row">
-                                        <div class="td1"> What </div>
-                                        <div class="td2"> Internet Voting </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="td1"> When </div>
-                                        <div class="td2"> <strong>Organizer - time and location</strong> <br>
-                                            <br>America, Toronto <br><br><strong>Invitee - time and
-                                                        location</strong> <br> <br> <br><br></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="td1"> Where </div>
-                                        <div class="td2"> </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="td1"> Participants </div>
-                                        <div class="td2"> <em>(invitee)</em> </div>
-                                    </div>
-                                    <!-- Only visible to organizers -->
-                                </div>
-                                <div class="dist-t1"></div>
-                                <!-- Auto-generated conference details used by e.g. Zoom -->
-                                <!-- Reschedule / Cancel buttons -->
-                                <div class="bts-t1" id="appointment-view-opts">
-                                    <div class="flt">
-                                        <!-- Reschedule button --><a href="https://appointmentthing.com/reschedule/invitee" title="" class="button-t2 rescheduleapp"> Reschedule <i class="material-icons">edit</i> </a>
-                                    </div>
-                                    <div class="flt">
-                                        <!-- Cancel appointment button (trigger confirm) --><a href="https://appointmentthing.com/ppl/internet-voting/?date=2022-10#" title="" class="button-t2 cancelapp"> Cancel appointment <i class="material-icons">highlight_off</i> </a>
-                                        <!-- Confirm cancelation popup -->
-                                        <div class="pop" id="cancelapp-pop">
-                                            <form id="cancelappform"> <input type="hidden" name="app_unique" value="iP17997"><input type="hidden" name="app_id" class="app_id" value=""><input type="hidden" name="cancel_by" value=""><input type="hidden" name="cancel_by_type" value="">
-                                                <input type="hidden" name="otl" value=""><input type="hidden" name="otl_id" value="">
-                                                <div class="hd">
-                                                    <p>Cancel appointment</p>
-                                                </div>
-                                                <div class="ds">
-                                                    <p> Please confirm cancelation of the appointment </p>
-                                                </div>
-                                                <div class="input inp-t2">
-                                                    <div class="inp"> <textarea name="reason" id="cancel-reason" placeholder="" autocomplete="off" class="expanding" spellcheck="false"></textarea><label for="details" class="label">Why are you cancelling?</label> </div>
-                                                </div>
-                                                <div class="bts">
-                                                    <div class="fl"> <input type="submit" value="Yes, cancel appointment" class="submit cancelpopconfirm button-t1 bd6554c">
-                                                    </div>
-                                                    <div class="fl"> <input type="button" value="Cancel" class="cancelpop button-t1"></div>
-                                                    <div class="cl"></div>
-                                                </div> <input type="hidden" name="csrf" value="428a307fec79de41a10bcbf221f81ea9"><input type="hidden" name="session_userid" value="1660253110EW2toLeOiV7cuRyPdS1b">
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="clr"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ----------------------------------------------- Page: Enter information (when rescheduling appointment) Steps: - User view event details with option to reschedule - User selects a new date/time - User enters reason for rescheduling (you are here) - Appointment confirmation ----------------------------------------------- -->
-                        <div class="book hide" id="booking-bookform-changed">
-                            <div class="tim">
-                                <div class="resc">
-                                    <p class="hed-t1">Reschedule Appointment</p>
-                                    <p class="des-t1"> Current appointment:
-                                        <br><strong><strike></strike></strong> </p>
-                                    <a href="https://appointmentthing.com/ppl/internet-voting/?date=2022-10#" title="" class="back backtoreschedule"> <i class="material-icons">arrow_back</i> </a>
-                                    <div class="bdr"></div>
-                                </div>
-                            </div>
-                            <form class="bookform bookformedit" data-mode="edit"> <input type="hidden" name="app_unique" value="iP17997"><input type="hidden" name="app_id" class="app_id" value=""><input type="hidden" name="time_from" class="frm_time_from" value=""><input type="hidden" name="time_to" class="frm_time_to"
-                                    value=""><input type="hidden" name="user_timezone" value="America/Toronto" class="inpusertimezone"><input type="hidden" name="user_timeformat" value="24h" class="inpusertimeformat"><input type="hidden" name="otl" value="">
-                                <input type="hidden" name="otl_id" value="">
-                                <div class="hed">
-                                    <p class="hed-t1"> Enter details </p>
-                                    <p class="des-t1"> Please fill out the information below to reschedule the appointment. </p>
-                                </div>
-                                <div class="conf-t1">
-                                    <p> You're about to reschedule your appointment to <br><strong class="conf-t1-time">{{autoupdates}}</strong> </p> <i class="material-icons ico">grade</i>
-                                </div>
-                                <div class="error-t1 hide">
-                                    <div class="inl">
-                                        <p>Please fill out the mandatory fields.</p> <i class="material-icons ico">warning</i>
-                                    </div>
-                                </div>
-                                <div class="input inp-t2">
-                                    <div class="inp"> <textarea value="" name="reason" id="change-reason" placeholder="" autocomplete="off" class="expanding"></textarea><label for="details" class="label">Why
-                                                    are you rescheduling?</label> </div>
-                                </div>
-                                <div class="submit-t1"> <input type="submit" value="Reschedule Appointment" data-register="Scheduling" class="submit"></div>
-                                <div class="guestcnt-t1">
-                                    <p> This appointment will be rescheduled for <strong></strong> </p>
-                                </div> <input type="hidden" name="csrf" value="428a307fec79de41a10bcbf221f81ea9"><input type="hidden" name="session_userid" value="1660253110EW2toLeOiV7cuRyPdS1b">
-                            </form>
-                        </div>
-                        <!-- ----------------------------------------------- Page: Confirmation When a user has rescheduled the appointment Steps: - User view event details with option to reschedule - User selects a new date/time - User enters reason for rescheduling - Appointment confirmation (you are here) ----------------------------------------------- -->
-                        <div class="confrm hide" id="confirmation-changed">
-                            <div class="hed">
-                                <p class="hed-t1"> Confirmed <span class="inco"> <span class="spx"> <svg viewBox="0 0 20 20" fill="currentColor">
-                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" data-v-093f0fe2=""></path>
-                                                    </svg></span> </span>
-                                </p>
-                                <p class="des-t1"> Your appointment has been changed. </p>
-                            </div>
-                            <div class="tabopts">
-                                <div class="row">
-                                    <div class="td1"> What </div>
-                                    <div class="td2"> Internet Voting </div>
-                                </div>
-                                <div class="row">
-                                    <div class="td1"> When </div>
-                                    <div class="td2"> <span class="conf-t1-time">{{autoupdates}}</span> </div>
-                                </div>
-                                <div class="row">
-                                    <div class="td1"> Where </div>
-                                    <div class="td2"> <span class="conf-t1-location">{{autoupdates}}</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="td3"> &nbsp; </div>
-                                    <div class="td4"> A confirmation email from AppointmentThing has been sent to your email address! You may receive an email from the host's calendar platform inviting you to a calendar event for the appointment. If you need to make any
-                                        changes to your appointment, options are available in the confirmation email. </div>
-                                </div>
-                            </div>
-                            <div class="signbox">
-                                <div class="hdx">
-                                    <p> <strong>That was easy!</strong> Want your own free booking page? </p>
-                                </div>
-                                <div class="bdx">
-                                    <div class="email-enter">
-                                        <form action="https://appointmentthing.com/signup" method="post" class="frtsignup" autocomplete="off" target="_blank"> <input type="text" name="email" value="" placeholder="Enter your email.." autocomplete="off" class="email-enter-input"> <input type="hidden" name="reference" value="bookingpage"> <input type="hidden" name="reference_id"
-                                                value="17997">
-                                            <div class="email-icon"> <i class="material-icons">alternate_email</i> </div>
-                                            <div class="email-submit"> <input type="submit" value="Try it now">
-                                            </div> <input type="hidden" name="csrf" value="428a307fec79de41a10bcbf221f81ea9"><input type="hidden" name="session_userid" value="1660253110EW2toLeOiV7cuRyPdS1b">
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -709,48 +489,7 @@
     </div>
     </div>
     </div>
-    <!-- Popup - processing + alerts -->
-    <div class="wrk-pop-t1-bg hide" id="wrk-pop-t1-bg"></div>
-    <div class="wrk-pop-t1 hide" id="wrk-pop-t1">
-        <div class="pd">
-            <div id="wrk-pop-t1-sch" class="hide">
-                <div class="hd-t1 hide" id="wrk-sch-hd">
-                    <p>Scheduling appointment</p>
-                </div>
-                <div class="hd-t1 hide" id="wrk-resch-hd">
-                    <p>Rescheduling appointment</p>
-                </div>
-                <div class="itm-t1 checked" id="wrk-resch-avai">
-                    <div class="ina"></div>
-                    <div class="chk"></div>
-                    <div class="load"></div>
-                    <p>Checking availability</p>
-                </div>
-                <div class="itm-t1 loading" id="wrk-resch-scap">
-                    <div class="ina"></div>
-                    <div class="chk"></div>
-                    <div class="load"></div>
-                    <p>Scheduling appointment</p>
-                </div>
-                <div class="itm-t1" id="wrk-resch-noti">
-                    <div class="ina"></div>
-                    <div class="chk"></div>
-                    <div class="load"></div>
-                    <p>Sending notifications</p>
-                </div>
-            </div>
-            <div id="wrk-pop-t1-errt1" class="hide">
-                <div class="hd-t2">
-                    <p>Oops! The time isn't available</p>
-                </div>
-                <div class="txt-t1">
-                    <p> The time you tried to schedule isn't available anymore. Please find a different time. </p>
-                </div>
-                <div class="sbt-t1"> <a href="https://appointmentthing.com/ppl/iP17997" title="" class="btfdt">Find a
-                        different time</a> </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Timeslots -->
     <div id="calendarslots" data-timeformat="24h" data-timezone="America/Toronto" data-country-iso="CA" data-base-url="ppl" data-app-url="internet-voting" class="hide">
         <!-- Month -->
@@ -1979,9 +1718,6 @@
         </div>
     </div>
     <div id="connectcals" data-calendars="" data-month="2022-08-01" data-unix-now="1660253110"></div>
-
-    <script class="iti-load-utils" async="" src="./assets/utils.js"></script>
-
 
 </body>
 
