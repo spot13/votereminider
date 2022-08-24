@@ -1225,6 +1225,7 @@ var booking = function() {
                 // Update label
                 $('#slots-selected-day').text(dtl);
 
+
                 // Get day variables
                 var imon = $(f).attr('data-month');
                 var iday = $(f).attr('data-day');
@@ -1254,6 +1255,78 @@ var booking = function() {
 
                     }
 
+                    // Update href cm
+                    var _href = $("a.confirmppl00").attr("href");
+                    $("a.confirmppl00").attr("href", "invite/" + iyer + imon + iday + '-00' + '.ics');
+
+                    var _href = $("a.confirmppl01").attr("href");
+                    $("a.confirmppl01").attr("href", "invite/" + iyer + imon + iday + '-01' + '.ics');
+
+                    var _href = $("a.confirmppl02").attr("href");
+                    $("a.confirmppl02").attr("href", "invite/" + iyer + imon + iday + '-02' + '.ics');
+
+                    var _href = $("a.confirmppl03").attr("href");
+                    $("a.confirmppl03").attr("href", "invite/" + iyer + imon + iday + '-03' + '.ics');
+
+                    var _href = $("a.confirmppl04").attr("href");
+                    $("a.confirmppl04").attr("href", "invite/" + iyer + imon + iday + '-04' + '.ics');
+
+                    var _href = $("a.confirmppl05").attr("href");
+                    $("a.confirmppl05").attr("href", "invite/" + iyer + imon + iday + '-05' + '.ics');
+
+                    var _href = $("a.confirmppl06").attr("href");
+                    $("a.confirmppl06").attr("href", "invite/" + iyer + imon + iday + '-06' + '.ics');
+
+                    var _href = $("a.confirmppl07").attr("href");
+                    $("a.confirmppl07").attr("href", "invite/" + iyer + imon + iday + '-07' + '.ics');
+
+                    var _href = $("a.confirmppl08").attr("href");
+                    $("a.confirmppl08").attr("href", "invite/" + iyer + imon + iday + '-08' + '.ics');
+
+                    var _href = $("a.confirmppl09").attr("href");
+                    $("a.confirmppl09").attr("href", "invite/" + iyer + imon + iday + '-09' + '.ics');
+
+                    var _href = $("a.confirmppl10").attr("href");
+                    $("a.confirmppl10").attr("href", "invite/" + iyer + imon + iday + '-10' + '.ics');
+
+                    var _href = $("a.confirmppl11").attr("href");
+                    $("a.confirmppl11").attr("href", "invite/" + iyer + imon + iday + '-11' + '.ics');
+
+                    var _href = $("a.confirmppl12").attr("href");
+                    $("a.confirmppl12").attr("href", "invite/" + iyer + imon + iday + '-12' + '.ics');
+
+                    var _href = $("a.confirmppl13").attr("href");
+                    $("a.confirmppl13").attr("href", "invite/" + iyer + imon + iday + '-13' + '.ics');
+
+                    var _href = $("a.confirmppl14").attr("href");
+                    $("a.confirmppl14").attr("href", "invite/" + iyer + imon + iday + '-14' + '.ics');
+
+                    var _href = $("a.confirmppl15").attr("href");
+                    $("a.confirmppl15").attr("href", "invite/" + iyer + imon + iday + '-15' + '.ics');
+
+                    var _href = $("a.confirmppl16").attr("href");
+                    $("a.confirmppl16").attr("href", "invite/" + iyer + imon + iday + '-16' + '.ics');
+
+                    var _href = $("a.confirmppl17").attr("href");
+                    $("a.confirmppl17").attr("href", "invite/" + iyer + imon + iday + '-17' + '.ics');
+
+                    var _href = $("a.confirmppl18").attr("href");
+                    $("a.confirmppl18").attr("href", "invite/" + iyer + imon + iday + '-18' + '.ics');
+
+                    var _href = $("a.confirmppl19").attr("href");
+                    $("a.confirmppl19").attr("href", "invite/" + iyer + imon + iday + '-19' + '.ics');
+
+                    var _href = $("a.confirmppl20").attr("href");
+                    $("a.confirmppl20").attr("href", "invite/" + iyer + imon + iday + '-20' + '.ics');
+
+                    var _href = $("a.confirmppl21").attr("href");
+                    $("a.confirmppl21").attr("href", "invite/" + iyer + imon + iday + '-21' + '.ics');
+
+                    var _href = $("a.confirmppl22").attr("href");
+                    $("a.confirmppl22").attr("href", "invite/" + iyer + imon + iday + '-22' + '.ics');
+
+                    var _href = $("a.confirmppl23").attr("href");
+                    $("a.confirmppl23").attr("href", "invite/" + iyer + imon + iday + '-23' + '.ics');
                 });
 
                 // Attach
