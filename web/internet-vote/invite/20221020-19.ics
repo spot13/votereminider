@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:[content]\n
+DTSTART:20221020T230000Z
+DTEND:20221021T000000Z
+LOCATION:Pickering Municipal Election (https://www.pickering.ca/en/city-hall/VotersInformation.aspx)
+SUMMARY;LANGUAGE=en-us:Pickering Municipal Election - Vote Reminder
+END:VEVENT
+END:VCALENDAR

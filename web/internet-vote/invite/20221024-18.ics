@@ -1,75 +1,11 @@
 BEGIN:VCALENDAR
-METHOD:REQUEST
-PRODID:Microsoft Exchange Server 2010
 VERSION:2.0
-BEGIN:VTIMEZONE
-TZID:Eastern Standard Time
-BEGIN:STANDARD
-DTSTART:16010101T020000
-TZOFFSETFROM:-0400
-TZOFFSETTO:-0500
-RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
-END:STANDARD
-BEGIN:DAYLIGHT
-DTSTART:16010101T020000
-TZOFFSETFROM:-0500
-TZOFFSETTO:-0400
-RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
-END:DAYLIGHT
-END:VTIMEZONE
 BEGIN:VEVENT
-ORGANIZER;CN=Pickering Municipal Election (https://www.pickering.ca/en/city-hall/VotersInformation.aspx)
-DESCRIPTION;LANGUAGE=en-CA:\n\n\nFrom: Pickering.ca\nWhen
- : 10:00 AM - 10:30 AM October 24\, 2022\nSubject: Pickering Municipal Elec
- tion - Voting Reminder\nLocation: Chestnut Hill Developments Recreation Co
- mplex 1867 Valley Farm Road Pickering\, ON L1V 3Y7\n\n\nT. 905.683.6582\n\
- n\n\nPickering Municipal Election Information_\n_______________________________
- _\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum 
- bibendum nisi, sodales faucibus justo gravida quis. Vivamus aliquet ex a 
- eleifend viverra. Suspendisse auctor felis et efficitur cursus. Aenean ex 
- risus, ultricies nec erat in, tincidunt euismod nisi. Pellentesque eget 
- bibendum erat, ut sollicitudin tellus. Integer molestie, risus vitae lobortis 
- convallis, ligula metus fermentum nunc, nec elementum mi metus vel lorem. Vivamus 
- bibendum lacus ut cursus pretium. Nulla eu mi nec metus lobortis vehicula in porta 
- ligula. Nulla est neque, vehicula vel sapien quis, scelerisque interdum augue. 
- Duis sed lectus dapibus, elementum nulla in, euismod sem.\n______________________
- __________\n
-UID:040000008200E00074C5B7101A82E008000000007B41A3BDBAB0D801000000000000000
- 010000000D33888566EF4F44C965545A51C6B516D
-SUMMARY;LANGUAGE=en-CA:Pickering Municipal Election - Voting Reminder
-DTSTART;TZID=Eastern Standard Time:20221024T100000
-DTEND;TZID=Eastern Standard Time:20221024T103000
 CLASS:PUBLIC
-PRIORITY:5
-DTSTAMP:20220815T152525Z
-TRANSP:OPAQUE
-STATUS:CONFIRMED
-SEQUENCE:0
-LOCATION;LANGUAGE=en-CA:Chestnut Hill Developments Recreation Complex\n1867
-  Valley Farm Road\nPickering\, ON L1V 3Y7
-X-MICROSOFT-CDO-APPT-SEQUENCE:0
-X-MICROSOFT-CDO-OWNERAPPTID:2120777339
-X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
-X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
-X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
-X-MICROSOFT-CDO-IMPORTANCE:1
-X-MICROSOFT-CDO-INSTTYPE:0
-X-MICROSOFT-ONLINEMEETINGEXTERNALLINK:
-X-MICROSOFT-ONLINEMEETINGCONFLINK:
-X-MICROSOFT-DONOTFORWARDMEETING:FALSE
-X-MICROSOFT-DISALLOW-COUNTER:FALSE
-X-MICROSOFT-LOCATIONDISPLAYNAME:Chestnut Hill Developments Recreation Compl
- ex\n1867 Valley Farm Road\nPickering\, ON L1V 3Y7
-X-MICROSOFT-LOCATIONSOURCE:None
-X-MICROSOFT-LOCATIONS:[{"DisplayName":"Chestnut Hill Developments Recreatio
- n Complex\\n1867 Valley Farm Road\\nPickering\, ON L1V 3Y7"\,"LocationAnno
- tation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"Loc
- ationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"LocationFu
- llAddress":""}]
-BEGIN:VALARM
-DESCRIPTION:REMINDER
-TRIGGER;RELATED=START:-PT15M
-ACTION:DISPLAY
-END:VALARM
+DESCRIPTION:[content]\n
+DTSTART:20221024T220000Z
+DTEND:20221024T230000Z
+LOCATION:Pickering Municipal Election (https://www.pickering.ca/en/city-hall/VotersInformation.aspx)
+SUMMARY;LANGUAGE=en-us:Pickering Municipal Election - Vote Reminder
 END:VEVENT
 END:VCALENDAR
