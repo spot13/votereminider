@@ -1255,6 +1255,23 @@ var booking = function() {
 
                     }
 
+
+                    // Hide times after 8pm on October 24th CM
+                    var daycontainer = document.getElementById('slots-selected-day').innerHTML;
+                    if (daycontainer == 'Monday, October 24th') {
+                        $('#pplhide23').addClass('hide');
+                        $('#pplhide22').addClass('hide');
+                        $('#pplhide21').addClass('hide');
+                        $('#pplhide20').addClass('hide');
+                    } else {
+                        $('#pplhide23').removeClass('hide');
+                        $('#pplhide22').removeClass('hide');
+                        $('#pplhide21').removeClass('hide');
+                        $('#pplhide20').removeClass('hide');
+                    }
+
+                    //console.log(daycontainer);
+
                     // Update href cm
                     var _href = $("a.confirmppl00").attr("href");
                     $("a.confirmppl00").attr("href", "invite/" + iyer + imon + iday + '-00' + '.ics');
