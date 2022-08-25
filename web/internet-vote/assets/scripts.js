@@ -341,7 +341,7 @@ var booking = function() {
                 // Ajax
                 $.ajax({
                     type: 'POST',
-                    url: '/source/web/actions/meetings/appointment-cancel.php',
+                    url: '',
                     data: dat,
                     cache: false,
                     success: function(data) {
@@ -1032,7 +1032,7 @@ var booking = function() {
                     // Ajax
                     $.ajax({
                         type: 'GET',
-                        url: '/source/web/templates/ajax_meetings_available_times.php',
+                        url: '',
                         data: dat,
                         cache: false,
                         success: function(data) {
@@ -2144,7 +2144,7 @@ var booking = function() {
             // Call
             $.ajax({
                 dataType: "json",
-                url: "https://maps.googleapis.com/maps/api/timezone/json?location=" + lat + "," + lng + "&timestamp=" + stamp + "&key=AIzaSyD20yeadofoNcyi7FjOTAl7ne5lpDVHR00",
+                url: "https://maps.googleapis.com/maps/api/timezone/json?location=" + lat + "," + lng + "&timestamp=" + stamp + "&key=",
                 success: function(data) {
 
                     // Get zone id
