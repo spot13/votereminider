@@ -1289,12 +1289,12 @@ var booking = function() {
                         $('#pplhide23').addClass('hide');
                         $('#pplhide22').addClass('hide');
                         $('#pplhide21').addClass('hide');
-                        $('#pplhide20').addClass('hide');
+                        //$('#pplhide20').addClass('hide');
                     } else {
                         $('#pplhide23').removeClass('hide');
                         $('#pplhide22').removeClass('hide');
                         $('#pplhide21').removeClass('hide');
-                        $('#pplhide20').removeClass('hide');
+                        //$('#pplhide20').removeClass('hide');
                     }
 
                     //console.log(daycontainer);
