@@ -1256,6 +1256,33 @@ var booking = function() {
                     }
 
 
+                    // Hide times after 8pm on October 17th CM
+                    var daycontainer = document.getElementById('slots-selected-day').innerHTML;
+                    if (daycontainer == 'Monday, October 17th') {
+                        $('#pplhide00').addClass('hide');
+                        $('#pplhide01').addClass('hide');
+                        $('#pplhide02').addClass('hide');
+                        $('#pplhide03').addClass('hide');
+                        $('#pplhide04').addClass('hide');
+                        $('#pplhide05').addClass('hide');
+                        $('#pplhide06').addClass('hide');
+                        $('#pplhide07').addClass('hide');
+                        $('#pplhide08').addClass('hide');
+                        $('#pplhide09').addClass('hide');
+                    } else {
+                        $('#pplhide00').removeClass('hide');
+                        $('#pplhide01').removeClass('hide');
+                        $('#pplhide02').removeClass('hide');
+                        $('#pplhide03').removeClass('hide');
+                        $('#pplhide04').removeClass('hide');
+                        $('#pplhide05').removeClass('hide');
+                        $('#pplhide06').removeClass('hide');
+                        $('#pplhide07').removeClass('hide');
+                        $('#pplhide08').removeClass('hide');
+                        $('#pplhide09').removeClass('hide');
+                    }
+
+
                     // Hide times after 8pm on October 24th CM
                     var daycontainer = document.getElementById('slots-selected-day').innerHTML;
                     if (daycontainer == 'Monday, October 24th') {
