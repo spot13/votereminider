@@ -2,7 +2,7 @@ BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
 CLASS:PUBLIC
-DESCRIPTION:\nYou made a plan to vote today!\n\n\nWays to vote:\n\n1.	Internet 
+DESCRIPTION:\nYou planned to vote today!\n\n\nWays to vote:\n\n1.	Internet 
 	Voting will be conducted throughout the entire voting period for eight con
 	secutive days beginning Monday\, October 17\, 2022 at 10:00 a.m. and endin
 	g at the close of the polls at 8:00 p.m. on Election Day\, Monday\, Octobe
@@ -574,7 +574,7 @@ X-ALT-DESC;FMTTYPE=text/html:<html xmlns:v="urn:schemas-microsoft-com:vml"
 	0pt\;word-wrap:break-word'><div class=WordSection1><h1 style='mso-margin-t
 	op-alt:15.75pt\;margin-right:0cm\;margin-bottom:7.9pt\;margin-left:0cm\;ba
 	ckground:white'><span style='font-size:29.5pt\;font-family:"Open Sans"\,sa
-	ns-serif\;color:#222222\;font-weight:normal'>You made a plan to vote today!<o:
+	ns-serif\;color:#222222\;font-weight:normal'>You planned to vote today!<o:
 	p></o:p></span></h1><h3 style='mso-margin-top-alt:15.75pt\;margin-right:0c
 	m\;margin-bottom:7.9pt\;margin-left:0cm\;background:white\;box-sizing: bor
 	der-box\;font-variant-ligatures: normal\;font-variant-caps: normal\;orphan
@@ -598,20 +598,20 @@ X-ALT-DESC;FMTTYPE=text/html:<html xmlns:v="urn:schemas-microsoft-com:vml"
 	font-size:11.5pt\;font-family:"Open Sans"\,sans-serif'>&nbsp\;will only be
 	 offered on Election Day\, Monday\, October 24\, <span class=GramE>2022</s
 	pan> from 10:00 a.m. to the close of polls at 8:00 p.m.<o:p></o:p></span><
-	/li></ol><p class=MsoNormal><strong><span style='font-size:11.5pt\;font-family:"Op
-	en Sans"\,sans-serif\;color:#222222'>Information about candidates:&nbsp\;<
+	/li></ol><p class=MsoNormal><span style='font-size:14pt\;font-family:"Op
+	en Sans"\,sans-serif\;color:#222222'><strong>Information about candidates:</strong>&nbsp\;<
 	a href="https://www.pickering.ca/en/city-hall/Candidates.aspx"><span style
-	='color:#008CBA'>https://www.pickering.ca/en/city-hall/Candidates.aspx</sp
-	an></a></strong><br style='mso-special-character:line-break'><![if !supportLineBrea
+	='color:#008CBA'><strong>https://www.pickering.ca/en/city-hall/Candidates.aspx</strong></sp
+	an></a><br style='mso-special-character:line-break'><![if !supportLineBrea
 	kNewLine]><br style='mso-special-character:line-break'><![endif]></span><s
 	pan style='mso-bidi-font-family:Calibri'><o:p></o:p></span></p><p style='m
 	so-margin-top-alt:0cm\;margin-right:0cm\;margin-bottom:7.9pt\;margin-left:
-	0cm\;background:white'><strong><span style='font-size:11.5pt\;font-family:"Open Sa
-	ns"\,sans-serif\;color:#222222'>Information about Voter Assistance Centres
-	 and Voting Locations:&nbsp\;<a href="https://www.pickering.ca/en/city-hal
+	0cm\;background:white'><span style='font-size:14pt\;font-family:"Open Sa
+	ns"\,sans-serif\;color:#222222'><strong>Information about Voter Assistance Centres
+	 and Voting Locations:</strong>&nbsp\;<a href="https://www.pickering.ca/en/city-hal
 	l/voter-assistance-centres-and-voting-locations.aspx"><span style='color:#
-	008CBA'>https://www.pickering.ca/en/city-hall/voter-assistance-centres-and
-	-voting-locations.aspx</span></a></strong><strong><span style='font-family:"Open Sa
+	008CBA'><strong>https://www.pickering.ca/en/city-hall/voter-assistance-centres-and
+	-voting-locations.aspx</strong></span></a><strong><span style='font-family:"Open Sa
 	ns"\,sans-serif\;font-weight:normal'><o:p></o:p></span></strong></span></p
 	><p style='mso-margin-top-alt:0cm\;margin-right:0cm\;margin-bottom:7.9pt\;
 	margin-left:0cm\;background:white'><strong><span style='font-size:14.0pt\;
